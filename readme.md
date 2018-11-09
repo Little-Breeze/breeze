@@ -7,8 +7,6 @@ breeze 是一个基于 webpack 的打包工具，不依赖于具体项目，相�
 
 ### <span id="install">如何安装</span>
 
-- gitlab 手动编译
-
   ```
   # npm 全局
    npm install breeze-cli -g 
