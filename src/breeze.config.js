@@ -36,15 +36,15 @@ module.exports = {
   static: {
     start: "", // relative path
     test: "",
-    pre: "//static.test.com/", // CDN domain
-    release: "//static.test.com/" // CDN domain
+    dev: "//static-demo.test.com/", // CDN domain
+    prod: "//static.test.com/" // CDN domain
   },
 
   api: {
     start: "",
     test: "",
-    pre: "//api.test.com",
-    release: "//api.test.com"
+    dev: "//api-demo.test.com",
+    prod: "//api.test.com"
   },
 
   // globals

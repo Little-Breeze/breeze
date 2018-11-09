@@ -15,15 +15,15 @@ module.exports = {
   static: {
     start: "", // here use relative path
     test: "",
-    pre: "//static.test.com/", // here use CDN domain
-    release: "//static.test.com/" // here use CDN domain
+    dev: "//static-demo.test.com/", // here use CDN domain
+    production: "//static.test.com/" // here use CDN domain
   },
 
   api: {
     start: "",
     test: "",
-    pre: "//api.test.com",
-    release: "//api.test.com"
+    dev: "//api-demo.test.com",
+    production: "//api.test.com"
   },
   // globals
   globals: {}, // 配置全局变量

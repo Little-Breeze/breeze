@@ -78,7 +78,18 @@ const tasks = {
       exec(
         webpack +
           " --config " +
-          path.resolve(__dirname, "..", "webpack", "webpack.base.config.js") +
+          path.resolve(__dirname, "..", "webpack", "webpack.base.config.js") + " --mode dev" +
+          " --progress"
+      );
+  },
+
+  release: function() {
+    checkModules();
+    (process.env.MODE = "build"),
+      exec(
+        webpack +
+          " --config " +
+          path.resolve(__dirname, "..", "webpack", "webpack.base.config.js") + " --mode prod" +
           " --progress"
       );
   },

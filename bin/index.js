@@ -20,7 +20,7 @@ program
       console.error('breeze can\'t run without breeze.config.js \n');
       process.exit(1);
     }
-    let modes = ['init', 'init-redux', 'init-prerender', 'start', 'build', 'build-server', 'prerender', 'component', 'page'];
+    let modes = ['init', 'init-redux', 'init-prerender', 'start', 'build', 'release', 'build-server', 'prerender', 'component', 'page'];
     if (modes.indexOf(mode) === -1) {
       console.log('breeze task miss match \n');
       cli.help();

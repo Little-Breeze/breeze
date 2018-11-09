@@ -24,14 +24,14 @@ const outputFileName = "index.html";
 const srcRoot = path.resolve(CWD, "src");
 const isDev = argv.env !== "prod";
 // TODO: 根据config来定义API
-const api = `https://www${isDev ? "-demo" : ""}.test.com`;
+const api = `https://api${isDev ? "-demo" : ""}.test.com`;
 const tplRoot = path.resolve(CWD, "config");
 const modules = [];
 const preRenderers = Object.create(null);
 
 console.log(chalk.yellowBright(`api: ${api}`));
 console.log(chalk.yellowBright(`server config: ${prerenderConfig}.js`));
-console.log(chalk.yellowBright(`env: ${isDev ? "demo" : "production"}`));
+console.log(chalk.yellowBright(`env: ${isDev ? "demo" : "prod"}`));
 build();
 
 function getFilePathByConfig(mod) {
